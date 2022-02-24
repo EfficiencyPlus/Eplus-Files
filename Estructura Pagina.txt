@@ -1,0 +1,25 @@
+La página se divide en 3 partes:
+
+General:
+ - Logo
+ - Servicios
+       + Macros 4 Micros
+       + CRMs & ERPs
+       + Soluciones Personalizadas
+       + Paginas Web
+       + Cursos y Capacitación
+ - Portafolio:
+   Fotos (dummy fotos)
+   Videos (dummy videos)
+
+Quienes somos:
+ - Descripción: (Draft)
+ "Nosotros creemos que se puede hacer mas con menos; 
+  utilizamos Excel, que es una herramienta al alcance de todos para diseñar 
+  y construir nuestras aplicaciones. Pensando en nuestros usuarios, 
+  las mismas son 100% personalizadas y adecuadas para cubrir sus necesidades "
+
+Contacto:
+ - Forma para contacto
+
+Links a redes sociales en todas las páginas
