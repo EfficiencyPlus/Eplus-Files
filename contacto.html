@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<title>Efficiancy Plus - Eplus</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" http-equiv="Efficiancy" title="Efficiancy Plus - Eplus">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="carosel_style.css">
-<script src="script.js"></script>
-<link rel="icon" href="favicon.ico">
+  <title>Efficiancy Plus - Eplus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" http-equiv="Efficiancy" title="Efficiancy Plus - Eplus">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" href="favicon.ico">
 
   <body class="w3-content" style="max-width:1300px" >
+
     <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="z-index:3;width:230px" id="mySidebar">
       <div class="w3-container w3-display-container w3-padding-small "></div>
           <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright "></i>
@@ -49,61 +53,160 @@
       <div class="w3-bar-item w3-padding-24 w3-wide">Opciones</div>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
       </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> <!-- Overlay effect when opening sidebar on small screens -->
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:250px">
-    <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top:83px"></div>
+    <div class="w3-hide-large" style="margin-top:83px"></div> <!-- Push down content on small screens -->
     <section>
-      <div class="w3-container">
-        <h1><b>Efficiency Plus Portafolio</b></h1>
-        <div class="w3-section w3-bottombar w3-padding-small">
+      <div class="w3-container" >
+        <div class="box"></div>
+        <h1><b style="font-family: 'Inconsolata', monospace;">Efficiency Plus Portafolio</b></h1>
+        <div class="w3-section w3-padding-small w3-bottombar">
           <button class="w3-button w3-white w3-hide-small" href="index.html"><i class="fa-regular fa-briefcase w3-margin-right" href="index.html"></i>Servicios</button>
           <button class="w3-button w3-white w3-hide-small" href="fotosyvideos.html"><i class="fa fa-photo w3-margin-right" href="fotosyvideos.html"></i>Fotos/Videos</button>
           <button class="w3-button w3-white w3-hide-small" href="contacto.html"><i class="fa fa-map-pin w3-margin-right" href="contacto.html"></i>Contacto</button>
           </div>
         </div>
-      </section>
+        </section>
 
-    <div class="w3-container w3-margin-left w3-margin-right" >
-      <p class="info_clausula"><b> Nosotros creemos que se puede hacer mas con menos; utilizamos Excel, que es una herramienta al alcance de todos para diseñar y construir nuestras aplicaciones. Pensando en nuestros usuarios, las mismas son 100% personalizadas y adecuadas para cubrir sus necesidades.</b></p>
-      </div>
-      <!-- Client grid -->
+      <div class="w3-container w3-margin-left w3-margin-right">
+        <p class="info_clausula" ><b> Nosotros creemos que se puede hacer mas con menos; utilizamos Excel, que es una herramienta al alcance de todos para diseñar y construir nuestras aplicaciones. Pensando en nuestros usuarios, las mismas son 100% personalizadas y adecuadas para cubrir sus necesidades.</b></p>
+        </div>
+        <!-- Client grid -->
       <div class="w3-row ">
         <!-- Columna 1 -->
         <div class="w3-col l3 s6">
-          <div class="w3-container">
+          <div class="w3-container " onclick="document.getElementById('id01').style.display='block'" >
               <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
-              <p><a class="linked" href='contacto de cliente'> Morett Aviation products.</a>
+              <p><a class="linked"> Morett Aviation products.</a>
                 <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
+              </div>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Morett Aviation products.</h2>
+                  </header>
+                <div class="w3-container">
+                  <div class="box"></div>
+                  <p>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p> <br><br>
+                  <p>Descripción de la solución;</p>
+                  <p>Se creó un módulo de administración de aeronaves en Excel incluyendo las siguientes opciones;</p><br>
+                  <p>- Dashboard de KPI's (Vuelos realizados, combustible gastado, número de vuelos y ciclos de motores)</p>
+                  <p>- Administración y registro de vuelos a través de una interfaz de usuario.</p>
+                  <p>- Administración y registro de incidencias mecánicas y administrativas de la aeronave.</p>
+                  <p>- Administración y registro de facturas/gastos/ingresos relacionados a la aeronave.</p>
+                  <p>- Generación de reporte mensual automático.</p>
+                  <p>- Manual de usuario</p>
+                  </div>
+                <footer class="w3-container">
+                  <p>Trabajamos en la creación de un módulo "maestro", el cual permite crear una cópia del mismo una vez que se introducen los datos de 
+                      la aeronave (numero de serie y modelo) siendo así una solución escalable y replicable.</p>
+                  </footer>
+                </div>
             </div>
           </div>
-        <!-- Columna 2 -->
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <div class="w3-display-container">
-            <img src="profiteroles/profiteroles1.jpg" style="width:100%">
+          <!-- Columna 2 -->
+          <div class="w3-col l3 s6">
+            <div class="w3-container " onclick="document.getElementById('id01').style.display='block'" >
+                <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
+                <p><a class="linked"> Morett Aviation products.</a>
+                  <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
+              </div>
+              <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4">
+                  <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>Morett Aviation products.</h2>
+                    </header>
+                  <div class="w3-container">
+                    <div class="box"></div>
+                    <p>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p> <br><br>
+                    <p>Descripción de la solución;</p>
+                    <p>Se creó un módulo de administración de aeronaves en Excel incluyendo las siguientes opciones;</p><br>
+                    <p>- Dashboard de KPI's (Vuelos realizados, combustible gastado, número de vuelos y ciclos de motores)</p>
+                    <p>- Administración y registro de vuelos a través de una interfaz de usuario.</p>
+                    <p>- Administración y registro de incidencias mecánicas y administrativas de la aeronave.</p>
+                    <p>- Administración y registro de facturas/gastos/ingresos relacionados a la aeronave.</p>
+                    <p>- Generación de reporte mensual automático.</p>
+                    <p>- Manual de usuario</p>
+                    </div>
+                  <footer class="w3-container">
+                    <p>Trabajamos en la creación de un módulo "maestro", el cual permite crear una cópia del mismo una vez que se introducen los datos de 
+                        la aeronave (numero de serie y modelo) siendo así una solución escalable y replicable.</p>
+                    </footer>
+                  </div>
+              </div>
             </div>
-            <p><a class="linked" href=''> Cliente</a> <br> <br> Descripcion</p>
-            </div>
-          </div>
         <!-- Columna 3 -->
         <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <img src="profiteroles/profiteroles_chocolate.jpeg" style="width:100%">
-            <p><a class="linked" href=''> Cliente</a> <br> <br> Descripcion</p>
+          <div class="w3-container " onclick="document.getElementById('id01').style.display='block'" >
+              <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
+              <p><a class="linked"> Morett Aviation products.</a>
+                <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
             </div>
-          </div> 
-        <!-- Columna 4 -->
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <img src="tartas/tarta_limon.jpeg" style="width:100%">
-            <p><a class="linked" href=''> Cliente</a> <br> <br> Descripcion</p>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Morett Aviation products.</h2>
+                  </header>
+                <div class="w3-container">
+                  <div class="box"></div>
+                  <p>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p> <br><br>
+                  <p>Descripción de la solución;</p>
+                  <p>Se creó un módulo de administración de aeronaves en Excel incluyendo las siguientes opciones;</p><br>
+                  <p>- Dashboard de KPI's (Vuelos realizados, combustible gastado, número de vuelos y ciclos de motores)</p>
+                  <p>- Administración y registro de vuelos a través de una interfaz de usuario.</p>
+                  <p>- Administración y registro de incidencias mecánicas y administrativas de la aeronave.</p>
+                  <p>- Administración y registro de facturas/gastos/ingresos relacionados a la aeronave.</p>
+                  <p>- Generación de reporte mensual automático.</p>
+                  <p>- Manual de usuario</p>
+                  </div>
+                <footer class="w3-container">
+                  <p>Trabajamos en la creación de un módulo "maestro", el cual permite crear una cópia del mismo una vez que se introducen los datos de 
+                      la aeronave (numero de serie y modelo) siendo así una solución escalable y replicable.</p>
+                  </footer>
+                </div>
             </div>
           </div>
-        </div>
+        <!-- Columna 4 -->
+        <div class="w3-col l3 s6">
+          <div class="w3-container " onclick="document.getElementById('id01').style.display='block'" >
+              <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
+              <p><a class="linked"> Morett Aviation products.</a>
+                <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
+              </div>
+            </div>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Morett Aviation products.</h2>
+                  </header>
+                <div class="w3-container">
+                  <div class="box"></div>
+                  <p>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p> <br><br>
+                  <p>Descripción de la solución;</p>
+                  <p>Se creó un módulo de administración de aeronaves en Excel incluyendo las siguientes opciones;</p><br>
+                  <p>- Dashboard de KPI's (Vuelos realizados, combustible gastado, número de vuelos y ciclos de motores)</p>
+                  <p>- Administración y registro de vuelos a través de una interfaz de usuario.</p>
+                  <p>- Administración y registro de incidencias mecánicas y administrativas de la aeronave.</p>
+                  <p>- Administración y registro de facturas/gastos/ingresos relacionados a la aeronave.</p>
+                  <p>- Generación de reporte mensual automático.</p>
+                  <p>- Manual de usuario</p>
+                  </div>
+                <footer class="w3-container">
+                  <p>Trabajamos en la creación de un módulo "maestro", el cual permite crear una cópia del mismo una vez que se introducen los datos de 
+                      la aeronave (numero de serie y modelo) siendo así una solución escalable y replicable.</p>
+                  </footer>
+                </div>
+            </div>
+          </div>
     <!-- Footer -->
     <footer class="w3-padding-16 w3-light-grey w3-medium w3-center" id="footer">
       <div class="w3-row-padding">

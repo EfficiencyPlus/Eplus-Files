@@ -43,3 +43,18 @@ footer{
 .container_testing:hover {
     transform: scale(1.01);
 }
+
+.box {
+  line-height: 100px;
+  background: #fff;
+}
+
+.box:after {
+  background: linear-gradient(to right,#039d03 35%, #e84f47 30%, #e84f47 50%, #ffcd02 75%, #0736e0 25%);
+  position: absolute;
+  content: '';
+  height: 4px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
