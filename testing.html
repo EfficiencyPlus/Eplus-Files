@@ -1,3 +1,12 @@
+<?php
+
+if($_POST["message"]) {
+mail("gomez.carlos30@gmail.com", "Here is the subject line",
+$_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
   <title>Efficiancy Plus - Eplus</title>
@@ -24,8 +33,9 @@
         </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
         <a class="w3-bar-item w3-small"><i class="fa fa-home fa-fw w3-margin-right w3-text-teal"></i>Guadalajara Jal</a>
-        <a style="font-size:1vw" class="w3-bar-item w3-small"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal"></i>hola.efficiencyplus@gmail.com</a>
-        <a class="w3-bar-item w3-small"><i class="fa fa-phone fa-fw w3-margin-right w3-text-teal"></i>12345678910</a>
+        <a style="font-size:1vw" class="w3-bar-item w3-small"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal"></i>contacto@efficiency-plus.com</a>
+        <a class="w3-bar-item w3-small"><i class="fa fa-phone fa-fw w3-margin-right w3-text-teal"></i>+52 1 33 3815 5950</a>
+        <a class="w3-bar-item w3-small"><i class="fa fa-phone fa-fw w3-margin-right w3-text-teal"></i>+52 1 33 1956 5520</a>
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn ">
           Servicios<i class="fa fa-caret-down w3-text-teal"></i>
           </a>
@@ -110,32 +120,33 @@
           <!-- Columna 2 -->
           <div class="w3-col l3 s6">
             <div class="w3-container container_testing" onclick="document.getElementById('id01').style.display='block'" >
-                <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
-                <p><a class="linked"> Morett Aviation products.</a>
-                  <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
+                <img src="./Diseño/Icons and Pictures/Marnegro.jpeg" style="width:100%">
+                <p><a class="linked"> Mar Negro Health Clinic.</a>
+                  <br> <br>Empresa dedicada a la imagenologia clínica.</p>
               </div>
               <div id="id01" class="w3-modal">
                 <div class="w3-modal-content w3-card-4">
                   <header class="w3-container w3-teal"> 
                     <span onclick="document.getElementById('id01').style.display='none'" 
                     class="w3-button w3-display-topright">&times;</span>
-                    <h2>Morett Aviation products.</h2>
+                    <h2> Mar Negro Health Clinic.</h2>
                     </header>
                   <div class="w3-container">
                     <div class="box"></div>
-                    <p>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p> <br><br>
+                    <p>Empresa dedicada a la imagenologia clínica.</p> <br><br>
                     <p>Descripción de la solución;</p>
-                    <p>Se creó un módulo de administración de aeronaves en Excel incluyendo las siguientes opciones;</p><br>
-                    <p>- Dashboard de KPI's (Vuelos realizados, combustible gastado, número de vuelos y ciclos de motores)</p>
-                    <p>- Administración y registro de vuelos a través de una interfaz de usuario.</p>
-                    <p>- Administración y registro de incidencias mecánicas y administrativas de la aeronave.</p>
-                    <p>- Administración y registro de facturas/gastos/ingresos relacionados a la aeronave.</p>
-                    <p>- Generación de reporte mensual automático.</p>
-                    <p>- Manual de usuario</p>
+                    <p>Para éste cliente, se creó una solución "end to end", o de inicio a fin, la misma comprende desde el registro de ingreso del paciente a las instalaciónes, hasta la salida del mismo, pasando por recepción, caja, consulta, etc.</p><br>
+                    <p>Nuestra solución comprende, entre otros aspectos;</p>
+                    <p>- Módulo Panel de Administración incluyendo un dashboard de KPI's.</p>
+                    <p>- Generación de reportes automáticos.</p>
+                    <p>- Registro de entrada con fotografía, así como registro y edición de datos de los clientes.</p>
+                    <p>- Modulo de Gestión de Radiología y Resonancia Magnética y Consultas (entradas, salidas de pacientes y notificación via email de resultados).</p>
+                    <p>- Módulo de Administración de personal operativo (vacaciones, actas admvas, formatos, registros, entre otros)</p>
+                    <p>- Manuales de usuario para cada módulo.</p>
                     </div>
                   <footer class="w3-container">
-                    <p>Trabajamos en la creación de un módulo "maestro", el cual permite crear una cópia del mismo una vez que se introducen los datos de 
-                        la aeronave (numero de serie y modelo) siendo así una solución escalable y replicable.</p>
+                    <p>Trabajamos en la creación de un módulo único para cada área operativa de cliente, atendiendo así sus necesidades especificas.
+                      y creando una solución a la medida.</p>
                     </footer>
                   </div>
               </div>
@@ -213,7 +224,8 @@
         <div class="w3-twothird s4">
           <h4>Contactanos</h4>
           <!-- <p>Questions? Go ahead.</p> -->
-          <form action="/action_page.php" target="_blank">
+          
+          <form action="https://formspree.io/f/xqknljrj" method="post">
             <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
             <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
             <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
@@ -223,6 +235,10 @@
           </div>
         </div>
     </footer>
+
+    
+
+
 
     </body>
 </html>
