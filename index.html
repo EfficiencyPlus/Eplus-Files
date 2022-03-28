@@ -1,11 +1,9 @@
 <?php
-
 if($_POST["message"]) {
 mail("gomez.carlos30@gmail.com", "Here is the subject line",
 $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
 }
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -20,11 +18,12 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <link rel="icon" href="favicon.ico">
 
-  <body class="w3-content" style="max-width:1300px" >
+  <body class="w3-content" style="max-width:1300px">
 
     <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="z-index:3;width:230px" id="mySidebar">
       <div class="w3-container w3-display-container w3-padding-small "></div>
@@ -67,7 +66,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:250px">
     <div class="w3-hide-large" style="margin-top:83px"></div> <!-- Push down content on small screens -->
-    <section>
+    <div>
       <div class="w3-container" >
         <div class="box"></div>
         <h1><b style="font-family: 'Inconsolata', monospace;">Efficiency Plus Portafolio</b></h1>
@@ -77,17 +76,96 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           <button class="w3-button w3-white w3-hide-small" href="contacto.html" onclick="myFunction2()"><i class="fa fa-map-pin w3-margin-right" href="contacto.html" onclick="myFunction2()" ></i>Contacto</button>
           </div>
         </div>
+      </div>
+      <div class="w3-container w3-margin-left w3-margin-right ">
+        <p class="info_clausula" style="text-align:center"><b><h3 style="font-family: 'Inconsolata', monospace; text-align:center">Sobre Nosotros</h3></b></p>
+        </div>
+        <div class="w3-container w3-margin-left w3-margin-right ">
+        <p class="info_clausula" style="text-align:center"><b> Nosotros creemos que se puede hacer mas con menos; utilizamos Excel, que es una herramienta al alcance de todos para diseñar y construir nuestras aplicaciones. Pensando en nuestros usuarios, las mismas son 100% personalizadas y adecuadas para cubrir sus necesidades.</b></p>
+          </div>
+          <!-- card carrousel -->
+        <section class="w3-padding-32">
+          <div>
+            <div class="container">
+              <!-- card start -->
+              <div class="card">
+                <h3 class="title">Macros 4 Micros</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                  </svg>
+                  </div>
+              </div>
+              <!-- card start -->
+              <div class="card">
+                <h3 class="title">Soluciones Personalizadas</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                  </svg>
+                </div>
+              </div>
+              <!-- card start -->
+              <div class="card">
+                <h3 class="title">CRMs & ERPs</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                  </svg>
+                </div>
+              </div>
+              <!-- card start -->
+              <div class="card">
+                <h3 class="title">Paginas Web</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                  </svg>
+                </div>
+              </div>
+              <!-- card start -->
+              <div class="card">
+                <h3 class="title">Cursos y Capacitación</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-      <div class="w3-container w3-margin-left w3-margin-right">
-        <p class="info_clausula" ><b> Nosotros creemos que se puede hacer mas con menos; utilizamos Excel, que es una herramienta al alcance de todos para diseñar y construir nuestras aplicaciones. Pensando en nuestros usuarios, las mismas son 100% personalizadas y adecuadas para cubrir sus necesidades.</b></p>
-        </div>
+
+
+
+    <section class="w3-padding-32">
         <!-- Client grid -->
-      <div class="w3-row ">
+      <div class="w3-row">
         <!-- Columna 1 -->
         <div class="w3-col l3 s6">
           <div class="w3-container container_testing" onclick="document.getElementById('id01').style.display='block'" >
-              <img src="./Diseño/Icons and Pictures/Morett.jpeg" style="width:100%">
+              <img src="./Diseño/Morett/apple-icon-precomposed.png" style="width:100%">
               <p><a class="linked"> Morett Aviation products.</a>
                 <br> <br>Ésta empresa se dedica a la administración de aeronaves y a vuelos privados.</p>
               </div>
@@ -120,7 +198,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           <!-- Columna 2 -->
           <div class="w3-col l3 s6">
             <div class="w3-container container_testing" onclick="document.getElementById('id02').style.display='block'" >
-                <img src="./Diseño/Icons and Pictures/Marnegro.jpeg" style="width:100%">
+                <img src="./Diseño/Marnegro/Untitled.png" style="width:100%">
                 <p><a class="linked"> Mar Negro Health Clinic.</a>
                   <br> <br>Empresa dedicada a la imagenologia clínica.</p>
               </div>
@@ -200,7 +278,58 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
                 </div>
             </div>
           </div>
-    <!-- Footer -->
+      </section>
+
+
+
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
     <footer class="w3-padding-16 w3-light-grey w3-medium w3-center" id="footer">
       <div class="w3-row-padding">
         <div class="w3-twothird s4">
