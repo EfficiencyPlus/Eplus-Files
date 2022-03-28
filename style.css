@@ -69,7 +69,7 @@ footer{
   top: 0;
 }
 
-.container {
+.container_services {
   /* position: absolute; */
   height: 300px;
   width: 800px;
@@ -78,7 +78,7 @@ footer{
   display: flex;
 }
 
-.card {
+.card_services {
   display: flex;
   height: 280px;
   width: 200px;
@@ -91,16 +91,16 @@ footer{
   left: 0px;
 }
 
-.card:not(:first-child) {
+.card_services:not(:first-child) {
   margin-left: -50px;
 }
 
-.card:hover {
+.card_services:hover {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
 }
 
-.card:hover ~ .card {
+.card_services:hover ~ .card {
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
@@ -144,7 +144,7 @@ footer{
   transition: 0.6s ease-out;
 }
 
-.card:hover .filledbar {
+.card_services:hover .filledbar {
   width: 120px;
   transition: 0.4s ease-out;
 }
@@ -167,11 +167,10 @@ svg {
   stroke-width: 2px;
 }
 
-.card:hover .stroke {
+.card_services:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
 }
-
 
 .box:hover ~ .box {
   position: relative;

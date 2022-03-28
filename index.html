@@ -5,6 +5,8 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
 }
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
   <title>Efficiency Plus - Eplus</title>
@@ -20,12 +22,12 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"><script src="script.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/jquery-1.12.0.min.js">
   <link rel="icon" href="favicon.ico">
 
   <body class="w3-content" style="max-width:1300px">
 
-    <div class="bg-image img1"></div>
 
     <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="z-index:3;width:230px" id="mySidebar">
       <div class="w3-container w3-display-container w3-padding-small "></div>
@@ -65,9 +67,6 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
       </header>
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> <!-- Overlay effect when opening sidebar on small screens -->
-
-    <div class="bg-image img2"></div>
-
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:250px">
     <div class="w3-hide-large" style="margin-top:83px"></div> <!-- Push down content on small screens -->
@@ -91,14 +90,13 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           <div class="w3-container w3-margin-left w3-margin-right ">
             <p class="info_clausula" style="text-align:center"><b><h3 style="font-family: 'Inconsolata', monospace; text-align:center">Nuestros servicios</h3></b></p>
             </div>
-            <div class="bg-image img3"></div>
 
-          <!-- card carrousel -->
+          <!-- card services -->
         <section class="w3-padding-32">
           <div>
-            <div class="container">
+            <div class="container_services">
               <!-- card start -->
-              <div class="card">
+              <div class="card_services">
                 <h3 class="title">Macros 4 Micros</h3>
                 <div class="bar">
                   <div class="emptybar"></div>
@@ -111,7 +109,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
                   </div>
               </div>
               <!-- card start -->
-              <div class="card">
+              <div class="card_services">
                 <h3 class="title">Soluciones Personalizadas</h3>
                 <div class="bar">
                   <div class="emptybar"></div>
@@ -124,7 +122,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
                 </div>
               </div>
               <!-- card start -->
-              <div class="card">
+              <div class="card_services">
                 <h3 class="title">CRMs & ERPs</h3>
                 <div class="bar">
                   <div class="emptybar"></div>
@@ -137,7 +135,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
                 </div>
               </div>
               <!-- card start -->
-              <div class="card">
+              <div class="card_services">
                 <h3 class="title">Paginas Web</h3>
                 <div class="bar">
                   <div class="emptybar"></div>
@@ -150,7 +148,7 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
                 </div>
               </div>
               <!-- card start -->
-              <div class="card">
+              <div class="card_services">
                 <h3 class="title">Cursos y Capacitación</h3>
                 <div class="bar">
                   <div class="emptybar"></div>
@@ -166,10 +164,16 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           </div>
         </section>
 
-        <div class="bg-image img4"></div>
+
+
+        
 
 
 
+
+
+
+        <!-- cards for company -->
     <section class="w3-padding-32">
         <!-- Client grid -->
       <div class="w3-row">
@@ -291,11 +295,15 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           </div>
       </section>
 
-      <div class="bg-image img5"></div>
+      <div>
+
+      </div>
+
+
 
 
       <!-- Footer -->
-    <footer class="w3-padding-16 w3-light-grey w3-medium w3-center" id="footer">
+    <footer class="w3-padding-32 w3-light-grey w3-medium w3-center" id="footer">
       <div class="w3-row-padding">
         <div class="w3-twothird s4">
           <h4>Contactanos</h4>
@@ -311,9 +319,5 @@ $_POST["insert your message here"]. "From: gomez.carlos30@gmail.com");
           </div>
         </div>
     </footer>
-
-    <div class="bg-image img6"></div>
-
-
-  </body>
+    </body>
 </html>
