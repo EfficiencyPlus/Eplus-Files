@@ -198,4 +198,53 @@ svg {
 
 
 
+.owl-carousel {
+  padding-left: 10px;
+}
+
+.first {
+  background: #00000082;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+.second {
+  background: #00000082;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+.third {
+  background: #00000082;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+.fourth {
+  background: #00000082;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+.container {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
 
